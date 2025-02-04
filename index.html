@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Forms Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Create a New Form</h2>
+        <input type="text" id="formTitle" placeholder="Enter Form Title">
+        <div id="questionsContainer"></div>
+        <button onclick="addQuestion()">➕ Add Question</button>
+        <button onclick="generateFormLink()">✅ Generate Form Link</button>
+        <h3>Preview</h3>
+        <div id="formPreview"></div>
+        <div id="shareLink" style="display: none;">Share this form: <span id="formLink"></span></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="form_preview.js"></script>
+    <script src="storage.js"></script>
+    <script src="form_submission.js"></script>
+
+</body>
+</html>
